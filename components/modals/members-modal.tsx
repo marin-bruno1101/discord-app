@@ -165,9 +165,9 @@ export const MembersModal = () => {
                     </DropdownMenu>
                   </div>
                 )}
-              [loadingId === member.id && (
-              <Loader2 className="animate-spin text-zinc-500 ml-auto w-4 h-4" />
-              )]
+              {loadingId === member.id && (
+                <Loader2 className="animate-spin text-zinc-500 ml-auto w-4 h-4" />
+              )}
             </div>
           ))}
         </ScrollArea>
