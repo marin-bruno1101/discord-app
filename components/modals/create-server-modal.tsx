@@ -69,11 +69,11 @@ export const CreateServerModal = () => {
     <Dialog open={isModalOpen} onOpenChange={handleClose}>
       <DialogContent className="bg-white text-black p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
-          <DialogTitle className="text-exl text-center font-bold">
+          <DialogTitle className="text-2xl text-center font-bold">
             Customize your server
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-500">
-            Give you server a personality with a name an image
+            Give your server a personality with a name an image
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>
@@ -112,7 +112,7 @@ export const CreateServerModal = () => {
                         {...field}
                       />
                     </FormControl>
-                    <FormMessage></FormMessage>
+                    <FormMessage />
                   </FormItem>
                 )}
               />

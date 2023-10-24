@@ -88,7 +88,7 @@ export const CreateChannelModal = () => {
     <Dialog open={isModalOpen} onOpenChange={handleClose}>
       <DialogContent className="bg-white text-black p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
-          <DialogTitle className="text-exl text-center font-bold">
+          <DialogTitle className="text-2xl text-center font-bold">
             Create Channel
           </DialogTitle>
         </DialogHeader>
