@@ -1,6 +1,7 @@
 "use client";
 
-import qs from "query-string";
+import { MemberRole } from "@prisma/client";
+import axios from "axios";
 import {
   Check,
   Gavel,
@@ -11,9 +12,10 @@ import {
   ShieldCheck,
   ShieldQuestion,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
+import qs from "query-string";
 import { useState } from "react";
 
-import { useModal } from "@/hooks/use-modal-store";
 import {
   Dialog,
   DialogContent,
@@ -21,9 +23,6 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { ServerWithMembersWithProfiles } from "@/types";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { UserAvatar } from "@/components/user-avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -32,12 +31,13 @@ import {
   DropdownMenuSeparator,
   DropdownMenuSub,
   DropdownMenuSubContent,
-  DropdownMenuTrigger,
   DropdownMenuSubTrigger,
+  DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { MemberRole } from "@prisma/client";
-import axios from "axios";
-import { useRouter } from "next/navigation";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { UserAvatar } from "@/components/user-avatar";
+import { useModal } from "@/hooks/use-modal-store";
+import { ServerWithMembersWithProfiles } from "@/types";
 
 const roleIconMap = {
   GUEST: null,
@@ -127,7 +127,7 @@ export const MembersModal = () => {
                       <DropdownMenuContent side="left">
                         <DropdownMenuSub>
                           <DropdownMenuSubTrigger className="flex items-center">
-                            <ShieldQuestion className="h-4 w-4 mr-2" />
+                            <ShieldQuestion className="w-4 h-4 mr-2" />
                             <span>Role</span>
                           </DropdownMenuSubTrigger>
                           <DropdownMenuPortal>
@@ -155,12 +155,11 @@ export const MembersModal = () => {
                             </DropdownMenuSubContent>
                           </DropdownMenuPortal>
                         </DropdownMenuSub>
-                        <DropdownMenuSeparator>
-                          <DropdownMenuItem onClick={() => onKick(member.id)}>
-                            <Gavel className="h-4 w-4 mr-2" />
-                            Kick
-                          </DropdownMenuItem>
-                        </DropdownMenuSeparator>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuItem onClick={() => onKick(member.id)}>
+                          <Gavel className="h-4 w-4 mr-2" />
+                          Kick
+                        </DropdownMenuItem>
                       </DropdownMenuContent>
                     </DropdownMenu>
                   </div>
