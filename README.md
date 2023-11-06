@@ -1,34 +1,113 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center" id="title">Full Stack Discord Clone</h1>
 
-## Getting Started
+<p align="center"><img src="https://socialify.git.ci/marin-bruno1101/discord-app/image?language=1&amp;name=1&amp;owner=1&amp;pattern=Brick%20Wall&amp;theme=Auto" alt="project-image"></p>
 
-First, run the development server:
+<p id="description">This is a repository for Full Stack Discord Clone</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+<p align="center"><img src="https://img.shields.io/badge/Status-WIP-blue" alt="shields"></p>
+
+<h2>Project Screenshots:</h2>
+
+<img src="https://imgur.com/PB4MXbN.jpg" alt="project-screenshot" width="500">
+
+<img src="https://imgur.com/DZdS8mq.jpg" alt="project-screenshot" width="500">
+
+<img src="https://imgur.com/AluyYwU.jpg" alt="project-screenshot" width="500">
+  
+<h2>🧐 Features</h2>
+
+Here're some of the project's best features:
+
+- Real-time messaging using Socket.io
+- Send attachments as messages using UploadThing
+- Delete & Edit messages in real time for all users
+- Create Text Audio and Video call Channels
+- 1:1 conversation between members
+- 1:1 video calls between members
+- Member management (Kick Role change Guest / Moderator)
+- Unique invite link generation & full working invite system
+- Infinite loading for messages in batches of 10 (tanstack/query)
+- Server creation and customization
+- Beautiful UI using TailwindCSS and ShadcnUI
+- Full responsivity and mobile UI
+- Light / Dark mode
+- Websocket fallback: Polling with alerts
+- ORM using Prisma
+- MySQL database using Planetscale
+- Authentication with Clerk
+
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+- Tailwind
+- React
+- Next.js
+- Prisma
+- MySQL
+- Socket.io
+- UploadThing
+- ShadcnUI
+
+<h2>Prerequisites</h2>
+
+Node version 18.x.x
+
+<h2>Cloning the repository</h2>
+
+```shell
+git clone https://github.com/AntonioErdeljac/next13-discord-clone.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h2>Install packages</h2>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+npm i
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<h2>Setup .env file</h2>
 
-## Learn More
+```js
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+DATABASE_URL=
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+UPLOADTHING_SECRET=
+UPLOADTHING_APP_ID=
 
-## Deploy on Vercel
+LIVEKIT_API_KEY=
+LIVEKIT_API_SECRET=
+NEXT_PUBLIC_LIVEKIT_URL=
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<h2>Setup Prisma</h2>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Add MySQL Database (I used PlanetScale)**
+
+```shell
+npx prisma generate
+npx prisma db push
+```
+
+<h2>Start the app</h2>
+
+```shell
+npm run dev
+```
+
+<h2>Available commands</h2>
+
+Running commands with npm `npm run [command]`
+
+| command | description                              |
+| :------ | :--------------------------------------- |
+| `dev`   | Starts a development instance of the app |
+
+<h2>🛡️ License:</h2>
+This project is licensed under the MIT
