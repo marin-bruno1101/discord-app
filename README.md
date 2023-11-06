@@ -6,6 +6,10 @@
 
 <p align="center"><img src="https://img.shields.io/badge/Status-WIP-blue" alt="shields"></p>
 
+<h2>🚀 Demo</h2>
+
+[https://discord-app.up.railway.app/](https://discord-app.up.railway.app/)
+  
 <h2>Project Screenshots:</h2>
 
 <img src="https://imgur.com/PB4MXbN.jpg" alt="project-screenshot" width="500">
