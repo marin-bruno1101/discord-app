@@ -7,7 +7,7 @@ import { format } from "date-fns";
 
 import { useChatQuery } from "@/hooks/use-chat-query";
 
-import { ChatItem } from "./chat-items";
+import { ChatItem } from "./chat-item";
 import { ChatWelcome } from "./chat-welcome";
 
 const DATE_FORMAT = "d MMM yyyy, HH:mm";
