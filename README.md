@@ -4,7 +4,7 @@
 
 <p id="description">This is a repository for Full Stack Discord Clone</p>
 
-<p align="center"><img src="https://img.shields.io/badge/Status-WIP-blue" alt="shields"></p>
+<p align="center"><img src="https://img.shields.io/badge/Status-DONE-green" alt="shields"></p>
 
 <h2>🚀 Demo</h2>
 
@@ -14,9 +14,11 @@
 
 <img src="https://imgur.com/PB4MXbN.jpg" alt="project-screenshot" width="500">
 
-<img src="https://imgur.com/DZdS8mq.jpg" alt="project-screenshot" width="500">
+<img src="https://imgur.com/uVaS8gZ.jpg" alt="project-screenshot" width="500">
 
-<img src="https://imgur.com/AluyYwU.jpg" alt="project-screenshot" width="500">
+<img src="https://imgur.com/TDaibm1.jpg" alt="project-screenshot" width="500">
+
+<img src="https://imgur.com/VyrtLby.jpg" alt="project-screenshot" width="500">
   
 <h2>🧐 Features</h2>
 
